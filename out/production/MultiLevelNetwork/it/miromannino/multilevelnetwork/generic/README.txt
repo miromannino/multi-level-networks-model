@@ -1,0 +1,1 @@
+Questo package definisce classi di aiuto che vengono utilizzate dal progetto

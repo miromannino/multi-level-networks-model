@@ -1,0 +1,1 @@
+Questo package definisce i metodi per importare ed esportare i grafi come l'automa generato da un path pattern e un network level

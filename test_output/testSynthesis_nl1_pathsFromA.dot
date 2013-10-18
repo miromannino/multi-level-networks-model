@@ -1,0 +1,17 @@
+digraph nl1Ris {
+	f;
+	g [label = "g [42]"];
+	d;
+	e;
+	b;
+	c [label = "c [38]"];
+	a;
+	g->b;
+	e->g [label = "4"];
+	b->e;
+	b->f;
+	c->g;
+	a->b;
+	a->c [label = "3"];
+	a->d;
+}

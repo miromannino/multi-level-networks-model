@@ -1,0 +1,8 @@
+digraph nl3 {
+	b [label = "b [d2]"];
+	c;
+	a [label = "a [2]"];
+	b->a [label = "d3"];
+	a->b [label = "2"];
+	a->c;
+}

@@ -1,0 +1,11 @@
+digraph nl1 {
+	d [label = "d [4]"];
+	e [label = "e [5]"];
+	b [label = "b [2]"];
+	c [label = "c [3]"];
+	a [label = "a [1]"];
+	d->b [label = "40"];
+	d->e [label = "30"];
+	a->b [label = "10"];
+	a->c [label = "20"];
+}

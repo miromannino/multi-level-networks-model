@@ -1,0 +1,1 @@
+Questo package definisce il modello, quindi la definizione dei Nodi, degli archi etc.

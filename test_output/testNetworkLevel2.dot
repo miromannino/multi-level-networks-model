@@ -1,0 +1,8 @@
+digraph nl2 {
+	b;
+	c;
+	a;
+	b->a [label = "fr"];
+	a->b [label = "2"];
+	a->c;
+}

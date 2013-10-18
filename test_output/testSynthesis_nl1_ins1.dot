@@ -1,0 +1,10 @@
+digraph nl1Ris2 {
+	d;
+	b;
+	c [label = "c [38]"];
+	a;
+	d->c;
+	b->c;
+	a->d;
+	a->b;
+}

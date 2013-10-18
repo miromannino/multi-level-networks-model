@@ -1,0 +1,18 @@
+digraph nl1 {
+	f;
+	g [label = "g [42]"];
+	d;
+	e;
+	b;
+	c [label = "c [38]"];
+	a;
+	f->a;
+	g->b;
+	e->g [label = "4"];
+	b->f;
+	b->e;
+	c->g;
+	a->b;
+	a->d;
+	a->c [label = "3"];
+}

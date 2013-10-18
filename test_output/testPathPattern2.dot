@@ -1,0 +1,10 @@
+digraph automaton {
+	s1->s2 [label = "ε"];
+	s2->s3 [label = "%"];
+	s3->s4 [label = "ε"];
+	s4->s5 [label = "ε"];
+	s5->s6 [label = "%"];
+s6[label = "s6(final)"]	s1->s7 [label = "ε"];
+	s7->s8 [label = "n1"];
+	s8->s4 [label = "ε"];
+}

@@ -1,0 +1,8 @@
+digraph risNl1 {
+	d [label = "d [4]"];
+	a [label = "a [1]"];
+	nn1 [label = "nn1 [5]"];
+	nn2 [label = "nn2 [7]"];
+	d->nn2 [label = "70"];
+	a->nn1 [label = "30"];
+}

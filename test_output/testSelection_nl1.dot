@@ -1,0 +1,16 @@
+digraph nl1 {
+	f;
+	g;
+	d;
+	e;
+	b;
+	c;
+	a;
+	e->g;
+	b->f;
+	b->e;
+	c->g;
+	a->c;
+	a->b;
+	a->d;
+}
