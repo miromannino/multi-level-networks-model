@@ -1,6 +1,6 @@
 # Multi Level Networks Model
 
-<img src="https://github.com/miromannino/multi-level-networks-model/blob/resources/multi-level-network-example1.png?raw=true"/>
+<img src="https://github.com/miromannino/multi-level-networks-model/blob/master/docs/multi-level-network-example1.png?raw=true"/>
 
 Graphs are used to represents data in many situations, especially where it is important do understand how data is interconnected. Each application has its own needs and it is important that the model and the query language are well designed.
 
@@ -10,7 +10,7 @@ The aim of this project is to create a model and query language for multi-level 
  - Mark and Steve are colleagues.
  - Steve and Peter don't know each other but they might become friends thanks to Mark.
 
-This project is exhaustively described in my [Master Thesis](https://github.com/miromannino/multi-level-networks-model/raw/resources/Tesi%20Magistrale.pdf) (in Italian).
+This project is exhaustively described in my [Master Thesis](https://github.com/miromannino/multi-level-networks-model/raw/master/docs/Tesi%20Magistrale.pdf) (in Italian).
 
 This repository contains the code for the implementation of the model, and the algebra to query the data. 
 
@@ -29,13 +29,13 @@ Now we will quickly describe the algebra operators, but the thesis provides form
 
 Concatenation P.P' simply concatenates two paths.
 
-<img src="https://github.com/miromannino/multi-level-networks-model/blob/resources/concatenation-definition.png?raw=true" />
+<img src="https://github.com/miromannino/multi-level-networks-model/blob/master/docs/concatenation-definition.png?raw=true" />
 
 ### Projection (π)
 
 It is a vertical cut on paths. For example if we have a set of paths, even if they are of different lenghts:
 
-<img src="https://github.com/miromannino/multi-level-networks-model/blob/resources/projection-example.png?raw=true" />
+<img src="https://github.com/miromannino/multi-level-networks-model/blob/master/docs/projection-example.png?raw=true" />
 
 ### Path patterns
 
@@ -66,7 +66,7 @@ A more formal and complete definition of all operators and their use can be foun
 
 ### Selection (&sigma;)
 
-<img src="https://github.com/miromannino/multi-level-networks-model/blob/resources/selection-example.png?raw=true" />
+<img src="https://github.com/miromannino/multi-level-networks-model/blob/master/docs/selection-example.png?raw=true" />
 
 The selection operator uses path patterns in order to retrieve results. For example σ<sub>a→∗→b</sub>(G) selects all paths of any length starting from <strong>a</strong> and ending in <strong>b</strong>. 
 
@@ -76,13 +76,13 @@ This operator builds a sub-graph given a series of paths. Let's for example assu
 
 The synthesis operator builds a sub-graph given these paths:
 
-<img src="https://github.com/miromannino/multi-level-networks-model/blob/resources/synthesis-example.png?raw=true" />
+<img src="https://github.com/miromannino/multi-level-networks-model/blob/master/docs/synthesis-example.png?raw=true" />
 
 This enables operators to be combined together for more complex queries.
 
 ### Aggregation (&alpha;)
 
-<img src="https://github.com/miromannino/multi-level-networks-model/blob/resources/aggregation-example.png?raw=true" />
+<img src="https://github.com/miromannino/multi-level-networks-model/blob/master/docs/aggregation-example.png?raw=true" />
 
 Aggregation joins nodes together, and similarly to the aggregation operator in relational databases, data contained in these nodes is aggregated. In the example above the operation is: 
 
@@ -93,7 +93,7 @@ Aggregation joins nodes together, and similarly to the aggregation operator in r
 
 Another example is where we want to know how many hops there are to reach specific nodes. For example:
 
-<img src="https://github.com/miromannino/multi-level-networks-model/blob/resources/aggregation-example2.png?raw=true" />
+<img src="https://github.com/miromannino/multi-level-networks-model/blob/master/docs/aggregation-example2.png?raw=true" />
 
 
 ### Join (&#10781;)
@@ -101,20 +101,20 @@ Another example is where we want to know how many hops there are to reach specif
 Differently than the operators defined before that only works in one network level, the join operator is able to join paths that are in multiple levels. 
 
 
-<img src="https://github.com/miromannino/multi-level-networks-model/blob/resources/join-example.png?raw=true" />
+<img src="https://github.com/miromannino/multi-level-networks-model/blob/master/docs/join-example.png?raw=true" />
 
 
 Join is also able by definition to group multiple nodes in one network level to one node to another network level.
 
-<img src="https://github.com/miromannino/multi-level-networks-model/blob/resources/join-example2.png?raw=true" />
+<img src="https://github.com/miromannino/multi-level-networks-model/blob/master/docs/join-example2.png?raw=true" />
 
 An example of use can be, for example to understand what's the minimum path between two nodes n<sub>1</sub> and n<sub>2</sub> despite these two are not connected in a specific network level (e.g. n<sub>1</sub> and n<sub>2</sub> are not friends on Facebook, but are connected through other platforms).
 
-<img src="https://github.com/miromannino/multi-level-networks-model/blob/resources/join-example3-1.png?raw=true" />
+<img src="https://github.com/miromannino/multi-level-networks-model/blob/master/docs/join-example3-1.png?raw=true" />
 
 We can join nodes between these two network levels and group paths in order to get the minimum path between n<sub>1</sub> and n<sub>2</sub>:
 
-<img src="https://github.com/miromannino/multi-level-networks-model/blob/resources/join-example3-2.png?raw=true" />
+<img src="https://github.com/miromannino/multi-level-networks-model/blob/master/docs/join-example3-2.png?raw=true" />
 
 ## Other info
 
